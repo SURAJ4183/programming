@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITS - Micro Information Technology Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .slide-enter {
+      transform: translateX(-100%);
+    }.slide-enter-active {
+  transition: transform 0.3s ease-out;
+  transform: translateX(0);
+}
+
+  </style>
+</head><body class="bg-gray-100 text-gray-900">
+  <!-- Sticky Internship Banner -->
+  <div id="internship-banner" class="hidden fixed top-2 left-2 bg-blue-600 text-white px-4 py-2 rounded shadow z-50">
+    <a href="#internship-form">🚀 Apply for Internship</a>
+  </div>  <!-- Sidebar -->  <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-gray-800 text-white p-5 transform -translate-x-full transition-transform duration-300 z-40">
+    <ul class="space-y-4">
+      <li><a href="#" class="block hover:text-blue-400">Internship Application</a></li>
+      <li><a href="#" class="block hover:text-blue-400">Offer Letter Generator</a></li>
+      <li><a href="#" class="block hover:text-blue-400">Certificate Verification</a></li>
+      <li><a href="#" class="block hover:text-blue-400">Join Our Team</a></li>
+      <li><a href="#" class="block hover:text-blue-400">Contact Info</a></li>
+    </ul>
+  </div>  <!-- Hamburger Icon -->  <button onclick="toggleSidebar()" class="fixed top-4 left-4 z-50 md:hidden">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>  <!-- Main Content -->  <header class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">MITS</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-blue-500">Home</a>
+        <a href="#" class="hover:text-blue-500">Tutorials</a>
+        <a href="#" class="hover:text-blue-500">Projects</a>
+        <a href="#" class="hover:text-blue-500">About Us</a>
+        <a href="#" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <input type="text" placeholder="Search..." class="hidden md:block px-2 py-1 border rounded">
+    </div>
+  </header>  <!-- Welcome Banner -->  <section class="text-center bg-blue-100 py-10">
+    <h2 class="text-3xl font-bold">Welcome to Micro Information Technology Services</h2>
+    <p class="mt-2">Empowering students through tutorials, projects, and internships</p>
+    <div class="mt-4 space-x-4">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Start Learning</button>
+      <button class="bg-green-600 text-white px-4 py-2 rounded">Browse Projects</button>
+    </div>
+  </section>  <!-- Featured Tutorials Slider Placeholder -->  <section class="py-10 px-4">
+    <h3 class="text-xl font-bold mb-4">Featured Tutorials</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded shadow">Python Basics</div>
+      <div class="bg-white p-4 rounded shadow">C++ OOP Concepts</div>
+      <div class="bg-white p-4 rounded shadow">Java Web App</div>
+    </div>
+  </section>  <!-- University Logos -->  <section class="py-10 bg-gray-200">
+    <h3 class="text-center text-xl font-bold mb-6">Proudly Associated With</h3>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 justify-items-center">
+      <img src="https://via.placeholder.com/100" alt="University 1">
+      <img src="https://via.placeholder.com/100" alt="University 2">
+      <img src="https://via.placeholder.com/100" alt="University 3">
+      <img src="https://via.placeholder.com/100" alt="University 4">
+      <img src="https://via.placeholder.com/100" alt="University 5">
+      <img src="https://via.placeholder.com/100" alt="University 6">
+      <img src="https://via.placeholder.com/100" alt="University 7">
+      <img src="https://via.placeholder.com/100" alt="University 8">
+      <img src="https://via.placeholder.com/100" alt="University 9">
+      <img src="https://via.placeholder.com/100" alt="University 10">
+    </div>
+  </section>  <!-- Social Media Stats -->  <section class="py-10 px-4 text-center">
+    <h3 class="text-xl font-bold mb-4">Our Reach</h3>
+    <div class="flex flex-col md:flex-row justify-around items-center gap-6">
+      <div><i class="fas fa-users"></i> 12.5k+ Followers</div>
+      <div><i class="fas fa-university"></i> 50+ Universities</div>
+      <div><i class="fas fa-project-diagram"></i> 200+ Projects</div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-gray-900 text-white py-6 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">Tutorials</a></li>
+          <li><a href="#" class="hover:underline">Projects</a></li>
+          <li><a href="#" class="hover:underline">Internships</a></li>
+          <li><a href="#" class="hover:underline">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Follow Us</h4>
+        <div class="space-x-4">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Contact</h4>
+        <p>Email: info@mits.com</p>
+        <p>Address: Tech Park, India</p>
+      </div>
+    </div>
+  </footer>  <!-- JS -->  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('-translate-x-full');
+    }
+
+    window.addEventListener('scroll', () => {
+      const banner = document.getElementById('internship-banner');
+      if (window.scrollY > 300) {
+        banner.classList.remove('hidden');
+      } else {
+        banner.classList.add('hidden');
+      }
+    });
+  </script></body></html>
