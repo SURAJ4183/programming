@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suraj Kumar - Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e90ff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Sections */
+    main section {
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 1rem;
+    }
+
+    /* Lists */
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-left: 5px solid #00bfff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .project a {
+      color: #ffdd57;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact */
+    a {
+      color: #1e90ff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+      main section {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suraj Kumar - Portfolio</h1>
+    <p>Web Developer | Coder | Learner</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Suraj Kumar, a BCA student passionate about technology, web development, and creative problem-solving.
+        I aim to build user-friendly websites that make a difference and always strive to learn something new every day.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Interests</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>UI/UX Design & GitHub Projects</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Rural Roots</h3>
+        <p>A web platform that helps rural artisans connect with the digital market.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio itself is a project showcasing my HTML and CSS skills.</p>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:surajkumar.bca23@poddarinstitute.org">surajkumar.bca23@poddarinstitute.org</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/surajkumarbca" target="_blank">linkedin.com/in/surajkumarbca</a></p>
+      <p>GitHub: <a href="https://github.com/surajbca" target="_blank">github.com/surajbca</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Suraj Kumar | Designed with 💙</p>
+  </footer>
+
+  <script>
+    // Console welcome message
+    window.onload = () => {
+      console.log("Hello, this is Suraj Kumar's Portfolio!");
+    };
+  </script>
+</body>
+</html>
