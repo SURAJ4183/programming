@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arya Hack-Verse Registration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      color: #ffffff;
+    }
+
+    .form {
+      backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 60px auto;
+      width: 90%;
+      max-width: 950px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #00f7ff;
+      text-shadow: 0 0 5px #00f7ff;
+    }
+
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #ffc300;
+      border-bottom: 2px dashed #ffc300;
+      padding-bottom: 5px;
+    }
+
+    .group {
+      margin-bottom: 20px;
+    }
+
+    .group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .group input,
+    .group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid #00f7ff;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .group input::placeholder {
+      color: #bbbbbb;
+    }
+
+    .group input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      background: linear-gradient(45deg, #00f7ff, #0088ff);
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00f7ff;
+      transition: 0.4s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(45deg, #00c3ff, #005eff);
+      color: #fff;
+      box-shadow: 0 0 25px #00f7ff;
+    }
+
+    @media (max-width: 600px) {
+      .form {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="form">
+  <h2>🚀 Arya Hack-Verse Registration Form 🌌</h2>
+
+  <form>
+    <div class="group">
+      <label for="team-size">Team Size</label>
+      <select name="team-size" id="team-size">
+        <option value="solo">Solo</option>
+        <option value="duel">Duel</option>
+        <option value="trio">Trio</option>
+        <option value="squad">Squad</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <label for="teamname">Team Name</label>
+      <input type="text" id="teamname" name="teamname" required>
+    </div>
+
+    <h3>👨‍🚀 Leader Details</h3>
+
+    <div class="group">
+      <label for="leadername">Full Name</label>
+      <input type="text" id="leadername" name="leadername" required>
+    </div>
+
+    <div class="group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="group">
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+    </div>
+
+    <div class="group">
+      <label for="linkedin">LinkedIn Profile (optional)</label>
+      <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+    </div>
+
+    <div class="group">
+      <label for="github">GitHub Profile (optional)</label>
+      <input type="url" id="github" name="github" placeholder="https://github.com/username">
+    </div>
+
+    <div class="group">
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+      </div>
+    </div>
+
+    <div class="group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="group">
+      <label for="city">City</label>
+      <select name="city" id="city">
+        <option value="jaipur">Jaipur</option>
+        <option value="udaipur">Udaipur</option>
+        <option value="bharatpur">Bharatpur</option>
+        <option value="ajmer">Ajmer</option>
+      </select>
+    </div>
+
+    <!-- You can repeat similar blocks for team members 1 to 3 -->
+    <h3>1st Member Details</h3>
+    <div class="group"><label>Full Name</label><input type="text" name="member1-name" required></div>
+    <div class="group"><label>Email</label><input type="email" name="member1-email" required></div>
+    <div class="group"><label>Mobile Number</label><input type="tel" name="member1-mobile" pattern="[0-9]{10}" required></div>
+    <div class="group"><label>LinkedIn</label><input type="url" name="member1-linkedin" placeholder="https://linkedin.com/in/username"></div>
+    <div class="group"><label>GitHub</label><input type="url" name="member1-github" placeholder="https://github.com/username"></div>
+    <div class="group">
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="member1-gender" value="male" required> Male</label>
+        <label><input type="radio" name="member1-gender" value="female" required> Female</label>
+        <label><input type="radio" name="member1-gender" value="other" required> Other</label>
+      </div>
+    </div>
+    <div class="group"><label>Date of Birth</label><input type="date" name="member1-dob" required></div>
+    <div class="group">
+      <label>City</label>
+      <select name="member1-city" required>
+        <option value="">--Select City--</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="udaipur">Udaipur</option>
+        <option value="bharatpur">Bharatpur</option>
+        <option value="ajmer">Ajmer</option>
+      </select>
+    </div>
+
+    <!-- Member 2 -->
+    <h3>2nd Member Details</h3>
+    <div class="group"><label>Full Name</label><input type="text" name="member2-name" required></div>
+    <div class="group"><label>Email</label><input type="email" name="member2-email" required></div>
+    <div class="group"><label>Mobile Number</label><input type="tel" name="member2-mobile" pattern="[0-9]{10}" required></div>
+    <div class="group"><label>LinkedIn</label><input type="url" name="member2-linkedin" placeholder="https://linkedin.com/in/username"></div>
+    <div class="group"><label>GitHub</label><input type="url" name="member2-github" placeholder="https://github.com/username"></div>
+    <div class="group">
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="member2-gender" value="male" required> Male</label>
+        <label><input type="radio" name="member2-gender" value="female" required> Female</label>
+        <label><input type="radio" name="member2-gender" value="other" required> Other</label>
+      </div>
+    </div>
+    <div class="group"><label>Date of Birth</label><input type="date" name="member2-dob" required></div>
+    <div class="group">
+      <label>City</label>
+      <select name="member2-city" required>
+        <option value="">--Select City--</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="udaipur">Udaipur</option>
+        <option value="bharatpur">Bharatpur</option>
+        <option value="ajmer">Ajmer</option>
+      </select>
+    </div>
+
+    <!-- Member 3 -->
+    <h3>3rd Member Details</h3>
+    <div class="group"><label>Full Name</label><input type="text" name="member3-name" required></div>
+    <div class="group"><label>Email</label><input type="email" name="member3-email" required></div>
+    <div class="group"><label>Mobile Number</label><input type="tel" name="member3-mobile" pattern="[0-9]{10}" required></div>
+    <div class="group"><label>LinkedIn</label><input type="url" name="member3-linkedin" placeholder="https://linkedin.com/in/username"></div>
+    <div class="group"><label>GitHub</label><input type="url" name="member3-github" placeholder="https://github.com/username"></div>
+    <div class="group">
+      <label>Gender</label>
+      <div class="gender-options">
+        <label><input type="radio" name="member3-gender" value="male" required> Male</label>
+        <label><input type="radio" name="member3-gender" value="female" required> Female</label>
+        <label><input type="radio" name="member3-gender" value="other" required> Other</label>
+      </div>
+    </div>
+    <div class="group"><label>Date of Birth</label><input type="date" name="member3-dob" required></div>
+    <div class="group">
+      <label>City</label>
+      <select name="member3-city" required>
+        <option value="">--Select City--</option>
+        <option value="jaipur">Jaipur</option>
+        <option value="udaipur">Udaipur</option>
+        <option value="bharatpur">Bharatpur</option>
+        <option value="ajmer">Ajmer</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <button type="submit">Register Now 🚀</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
